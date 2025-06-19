@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeCrafters - Programadores 5to Año</title>
+    <meta
+      name="description"
+      content="Página web para estudiantes de 5to año de programación - Construye tu futuro bloque por bloque"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <!-- Parallax Background Elements -->
+      <div class="parallax-bg">
+        <div class="minecraft-block bg-green-600 block-1"></div>
+        <div class="minecraft-block bg-brown-600 block-2"></div>
+        <div class="minecraft-block bg-gray-500 block-3"></div>
+        <div class="minecraft-block bg-blue-500 block-4"></div>
+        <div class="minecraft-block bg-yellow-600 block-5"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">CRAFT YOUR CODE</h1>
+        <p class="hero-subtitle">
+          Bienvenidos programadores de 5to año - Construye tu futuro bloque por
+          bloque
+        </p>
+        <div class="hero-buttons">
+          <button
+            class="minecraft-button btn-primary"
+            onclick="scrollToSection('about')"
+          >
+            EXPLORAR MUNDO
+          </button>
+          <button
+            class="minecraft-button btn-secondary"
+            onclick="scrollToSection('projects')"
+          >
+            VER PROYECTOS
+          </button>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+          <div class="arrow-down">↓</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="parallax-bg">
+        <div class="minecraft-block bg-emerald-700 block-6"></div>
+        <div class="minecraft-block bg-lime-600 block-7"></div>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">ABOUT US</h2>
+          <div class="section-divider bg-brown-600"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card bg-brown-800 border-brown-900">
+            <h3 class="card-title text-yellow-400">NUESTRO MUNDO</h3>
+            <p class="card-text">
+              Somos estudiantes de 5to año de programación, apasionados por
+              crear código como si fuéramos mineros construyendo en Minecraft.
+              Cada línea de código es un bloque que colocamos con precisión para
+              construir aplicaciones increíbles.
+            </p>
+          </div>
+
+          <div class="about-card bg-green-800 border-green-900">
+            <h3 class="card-title text-lime-400">NUESTRA MISIÓN</h3>
+            <p class="card-text">
+              Transformar ideas en realidad digital, construyendo proyectos que
+              impacten. Como en Minecraft, comenzamos con recursos básicos y
+              creamos mundos completos a través de la creatividad y el trabajo
+              duro.
+            </p>
+          </div>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="value-block bg-red-600"></div>
+            <h4 class="value-title">CREATIVIDAD</h4>
+            <p class="value-text">Innovación sin límites</p>
+          </div>
+          <div class="value-item">
+            <div class="value-block bg-blue-600"></div>
+            <h4 class="value-title">COLABORACIÓN</h4>
+            <p class="value-text">Trabajo en equipo</p>
+          </div>
+          <div class="value-item">
+            <div class="value-block bg-purple-600"></div>
+            <h4 class="value-title">EVOLUCIÓN</h4>
+            <p class="value-text">Crecimiento constante</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="parallax-bg">
+        <div class="minecraft-block bg-blue-400 block-8"></div>
+        <div class="minecraft-block bg-yellow-500 block-9"></div>
+        <div class="minecraft-block bg-emerald-500 block-10"></div>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">NUESTROS BUILDS</h2>
+          <div class="section-divider bg-yellow-600"></div>
+          <p class="section-subtitle">
+            Proyectos construidos bloque por bloque con dedicación y creatividad
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card bg-brown-600 border-brown-800">
+            <h3 class="project-title">SISTEMA DE INVENTARIO</h3>
+            <p class="project-description">
+              Sistema completo de gestión de inventario inspirado en los cofres
+              de Minecraft
+            </p>
+            <p class="project-tech">React • Node.js • MongoDB</p>
+            <button class="minecraft-button btn-white">VER PROYECTO</button>
+          </div>
+
+          <div class="project-card bg-green-600 border-green-800">
+            <h3 class="project-title">PLATAFORMA EDUCATIVA</h3>
+            <p class="project-description">
+              Aplicación web para aprender programación de forma gamificada
+            </p>
+            <p class="project-tech">Vue.js • Python • PostgreSQL</p>
+            <button class="minecraft-button btn-white">VER PROYECTO</button>
+          </div>
+
+          <div class="project-card bg-blue-600 border-blue-800">
+            <h3 class="project-title">E-COMMERCE GAMER</h3>
+            <p class="project-description">
+              Tienda online especializada en productos gaming con diseño
+              pixelado
+            </p>
+            <p class="project-tech">Next.js • Stripe • Firebase</p>
+            <button class="minecraft-button btn-white">VER PROYECTO</button>
+          </div>
+
+          <div class="project-card bg-purple-600 border-purple-800">
+            <h3 class="project-title">API REST COMPLETA</h3>
+            <p class="project-description">
+              Backend robusto para aplicaciones móviles con autenticación JWT
+            </p>
+            <p class="project-tech">Express.js • MySQL • Docker</p>
+            <button class="minecraft-button btn-white">VER PROYECTO</button>
+          </div>
+
+          <div class="project-card bg-orange-600 border-orange-800">
+            <h3 class="project-title">DASHBOARD ANALYTICS</h3>
+            <p class="project-description">
+              Panel de control con métricas en tiempo real y visualizaciones
+            </p>
+            <p class="project-tech">React • D3.js • WebSocket</p>
+            <button class="minecraft-button btn-white">VER PROYECTO</button>
+          </div>
+
+          <div class="project-card bg-red-600 border-red-800">
+            <h3 class="project-title">MOBILE APP</h3>
+            <p class="project-description">
+              Aplicación móvil nativa con sincronización en la nube
+            </p>
+            <p class="project-tech">React Native • Redux • AWS</p>
+            <button class="minecraft-button btn-white">VER PROYECTO</button>
+          </div>
+        </div>
+
+        <div class="section-footer">
+          <button class="minecraft-button btn-primary-large">
+            VER TODOS LOS PROYECTOS
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="parallax-bg">
+        <div class="minecraft-block bg-red-500 block-11"></div>
+        <div class="minecraft-block bg-blue-700 block-12"></div>
+        <div class="minecraft-block bg-emerald-600 block-13"></div>
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">CONTÁCTANOS</h2>
+          <div class="section-divider bg-red-600"></div>
+          <p class="section-subtitle">
+            ¿Listo para construir algo increíble juntos?
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info minecraft-panel bg-gray-800 border-gray-900">
+            <h3 class="contact-title text-yellow-400">
+              INFORMACIÓN DE CONTACTO
+            </h3>
+
+            <div class="contact-item">
+              <div class="contact-icon bg-green-600">@</div>
+              <div class="contact-details">
+                <h4 class="contact-label">EMAIL</h4>
+                <p class="contact-value">programadores5to@minecraft.dev</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon bg-blue-600">#</div>
+              <div class="contact-details">
+                <h4 class="contact-label">DISCORD</h4>
+                <p class="contact-value">CodeCrafters#5555</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon bg-purple-600">G</div>
+              <div class="contact-details">
+                <h4 class="contact-label">GITHUB</h4>
+                <p class="contact-value">github.com/codecrafters5to</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon bg-red-600">📍</div>
+              <div class="contact-details">
+                <h4 class="contact-label">UBICACIÓN</h4>
+                <p class="contact-value">Escuela Técnica - Aula 404</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="contact-form minecraft-panel bg-brown-800 border-brown-900"
+          >
+            <h3 class="contact-title text-lime-400">ENVÍANOS UN MENSAJE</h3>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label">NOMBRE</label>
+                <input
+                  type="text"
+                  class="minecraft-input"
+                  placeholder="Tu nombre aquí..."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">EMAIL</label>
+                <input
+                  type="email"
+                  class="minecraft-input"
+                  placeholder="tu@email.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">MENSAJE</label>
+                <textarea
+                  class="minecraft-input textarea"
+                  placeholder="Cuéntanos sobre tu proyecto..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="minecraft-button btn-success">
+                ENVIAR MENSAJE
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="bedrock-pattern">
+        <div class="bedrock-grid">
+          <!-- Bedrock blocks will be generated by JS -->
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3 class="footer-title text-yellow-400">CODECRAFTERS</h3>
+            <p class="footer-text">
+              Estudiantes de 5to año construyendo el futuro de la programación,
+              un bloque de código a la vez.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-subtitle">NAVEGACIÓN</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#about" onclick="scrollToSection('about')">About</a>
+              </li>
+              <li>
+                <a href="#projects" onclick="scrollToSection('projects')"
+                  >Proyectos</a
+                >
+              </li>
+              <li>
+                <a href="#contact" onclick="scrollToSection('contact')"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-subtitle">TECNOLOGÍAS</h4>
+            <ul class="footer-list">
+              <li>React & Next.js</li>
+              <li>Node.js & Python</li>
+              <li>MongoDB & PostgreSQL</li>
+              <li>Docker & AWS</li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4 class="footer-subtitle">SÍGUENOS</h4>
+            <div class="social-blocks">
+              <div class="social-block bg-blue-600"></div>
+              <div class="social-block bg-purple-600"></div>
+              <div class="social-block bg-green-600"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            © 2024 CodeCrafters - Programadores de 5to Año. Construido con 💚 y
+            muchos bloques de código.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
