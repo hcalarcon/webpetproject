@@ -871,4 +871,14 @@ body {
     font-size: 12px;
     padding: 12px 24px;
   }
+
+  .value-block img {
+    width: 70%;
+    transform: translateY(30%); /* se muestra más, menos escondida */
+  }
+
+  /* Opcional: desactivar hover en móvil */
+  .value-item:hover .value-block img {
+    transform: translateY(0) scale(1); /* nada loco en mobile */
+  }
 }
